@@ -101,7 +101,7 @@ export default function CartPage() {
 			<StripeComponent
 				clientSecret={stripeData.paymentIntent.client_secret}
 				publishableKey={stripeData.publishableKey}
-				returnUrl="http://localhost:3000/pages-router/cart/payment"
+				returnUrl="https://example-nextjs-stripe.vercel.app//pages-router/cart/payment"
 			/>
 		</div>
 	);

@@ -14,7 +14,7 @@ export default async function CartPage() {
 		return (
 			<div className="text-red-500">
 				Stripe App was not installed in this Saleor Cloud instance. Go to{" "}
-				<a href="https://stripe.saleor.app/">stripe.saleor.app</a> and follow the instructions.
+				<a href="	">stripe.saleor.app</a> and follow the instructions.
 			</div>
 		);
 	}
@@ -64,7 +64,7 @@ export default async function CartPage() {
 			<StripeComponent
 				clientSecret={stripeData.paymentIntent.client_secret}
 				publishableKey={stripeData.publishableKey}
-				returnUrl="http://localhost:3000/app-router/cart/payment"
+				returnUrl="https://example-nextjs-stripe.vercel.app/app-router/cart/payment"
 			/>
 		</div>
 	);
